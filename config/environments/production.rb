@@ -1,5 +1,21 @@
 Heroku::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
+config.action_mailer.default_url_options = { :host => 'herokuapp.com' }
+# ActionMailer Config
+# Setup for production - deliveries, no errors raised
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.perform_deliveries = true
+config.action_mailer.raise_delivery_errors = true
+config.action_mailer.default :charset => "utf-8"
+
+ActionMailer::Base.smtp_settings = {
+  :address => "smtp.gmail.com",
+  :port => 587,
+  :authentication => :plain,
+  :domain => ENV['GMAIL_SMTP_USER'],
+  :user_name => ENV['GMAIL_SMTP_USER'],
+  :password => ENV['GMAIL_SMTP_PASSWORD'],
+}
 
   # The production environment is meant for finished, "live" apps.
   # Code is not reloaded between requests
