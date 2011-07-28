@@ -15,6 +15,7 @@ ActionMailer::Base.smtp_settings = {
   :domain => ENV['GMAIL_SMTP_USER'],
   :user_name => ENV['GMAIL_SMTP_USER'],
   :password => ENV['GMAIL_SMTP_PASSWORD'],
+  :enable_starttls_auto => true
 }
 
   # The production environment is meant for finished, "live" apps.
