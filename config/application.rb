@@ -12,7 +12,7 @@ module Heroku
 config.action_mailer.smtp_settings = {
 :address => "smtp.gmail.com",
 :port => 587,
-:domain => 'road2ruby.com',
+:domain => 'http://thridapp.heroku.com/',
 :user_name => 'sriram.in22@gmail.com',
 :password => '9866266845',
 :authentication => 'plain',
