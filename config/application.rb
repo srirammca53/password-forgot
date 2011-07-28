@@ -10,7 +10,7 @@ module Heroku
   class Application < Rails::Application
   config.action_mailer.delivery_method = :smtp
 config.action_mailer.smtp_settings = {
-:address => "smtp.gmail.com",
+:address => "smtp.heroku.gmail.com",
 :port => 587,
 :domain => 'http://thridapp.heroku.com/',
 :user_name => 'sriram.in22@gmail.com',
