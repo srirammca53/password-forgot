@@ -3,6 +3,8 @@
 Devise.setup do |config|
   # Configure the e-mail address which will be shown in DeviseMailer.
   config.mailer_sender = "please-change-me@config-initializers-devise.com"
+  config.mailer_sender = "sriram.in22@gmail.com"
+
 
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating an user. By default is
