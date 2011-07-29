@@ -12,18 +12,19 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :Article %><br />
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :mail %><br />
+    <%= f.label :Title %><br />
     <%= f.text_field :mail %>
   </div>
   <div class="field">
-    <%= f.label :address %><br />
+    <%= f.label :Content %><br />
     <%= f.text_area :address %>
   </div>
-  
+  <%= recaptcha_tags :public_key => '6LdMmsYSAAAAACZIp1f-YsaO0-08_ogsSDieDrs4' %>
+
   <div class="actions">
     <%= f.submit %>
   </div>

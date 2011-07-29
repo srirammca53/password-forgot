@@ -32,4 +32,6 @@ Heroku::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+  ENV['RECAPTCHA_PUBLIC_KEY'] = '6LdMmsYSAAAAACZIp1f-YsaO0-08_ogsSDieDrs4'
+ENV['RECAPTCHA_PRIVATE_KEY'] = '6LdMmsYSAAAAAHzIWZ3s5vk5pCoIMarn3v2uAIEQ'
 end

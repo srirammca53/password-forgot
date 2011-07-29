@@ -14,12 +14,7 @@ Signed in as <%= current_author.email %>. Not you?
 <% else %>
 <%= link_to "Sign up", new_author_registration_path %> or <%= link_to "sign in", new_author_session_path %>
 <% end %>
-
 <%= yield %>
 
-
-<% if author_signed_in? %>
-<%= link_to "Edit account", edit_author_registration_path %>
-<% end %>
 </body>
 </html>

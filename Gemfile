@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'pg'
 gem 'will_paginate'
 gem 'devise', '1.1.rc0' 
+gem 'recaptcha', :require => 'recaptcha/rails'
 # Use unicorn as the web server
 # gem 'unicorn'
 

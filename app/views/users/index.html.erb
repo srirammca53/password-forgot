@@ -1,16 +1,16 @@
-<center><h1>Listing Friends</h1></center>
+<center><h1>Listing Artilces</h1></center>
 
 <hr/>
-<%= link_to 'New Friend', new_user_path %>
+<%= link_to 'New Article', new_user_path %>
 
 <% @users.each do |user| %>
 <% if author_signed_in? %>
   <table>
-    <tr><td>Name:</td>
+    <tr><td>Article:</td>
     <td><%= user.name %><td></tr><br>
-    <tr><td>Email:</td>
+    <tr><td>Title:</td>
     <td><%= user.mail %></td></tr><br>
-    <tr><td>Address:</td>
+    <tr><td>Content:</td>
     <td><%= user.address %></td></tr><br>
     <tr><td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>

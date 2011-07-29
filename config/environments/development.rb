@@ -22,5 +22,8 @@ config.action_mailer.default_url_options = { :host => 'thridapp.heroku.com/' }
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+  ENV['RECAPTCHA_PUBLIC_KEY'] = '6LdMmsYSAAAAACZIp1f-YsaO0-08_ogsSDieDrs4'
+ENV['RECAPTCHA_PRIVATE_KEY'] = '6LdMmsYSAAAAAHzIWZ3s5vk5pCoIMarn3v2uAIEQ'
+
 end
 
